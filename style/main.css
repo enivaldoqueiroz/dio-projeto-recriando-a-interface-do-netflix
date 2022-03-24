@@ -9,9 +9,11 @@
     box-sizing: border-box;
 }
 
+/*Elmentos Base*/
 body{
     background: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
 }
 
 header .container{
@@ -19,12 +21,13 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 header .logo{
     margin-left: 5px;
     color: var(--vermelho);
-    font-family: 'Arial Black';
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 40px;
 }
 
@@ -36,4 +39,26 @@ header nav a{
 
 header nav a:hover{
     color: #fff;
+}
+
+/*Filmes principais*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)) ,url('/img/img001.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 50px;
+}
+
+.titulo{
+    font-size: 40px;
 }
